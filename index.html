@@ -1,0 +1,781 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Cybersecurity Expert - Elite Security Professional</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Fira+Code:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="loader-screen" id="loader">
+        <div class="loader-container">
+            <div class="hack-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">SECURITY PROTOCOL INITIALIZATION</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="prompt">root@cybersec:~$</span>
+                        <span class="command">./init_security.sh</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="output">[INFO] Scanning system vulnerabilities...</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="output">[INFO] Firewall configuration: <span class="success">ACTIVE</span></span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="output">[INFO] Encryption protocols: <span class="success">ENABLED</span></span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="output">[INFO] Intrusion detection: <span class="success">ONLINE</span></span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="output success">[SUCCESS] System secured. Access granted.</span>
+                    </div>
+                    <div class="terminal-line">
+                        <span class="prompt">root@cybersec:~$</span>
+                        <span class="cursor">_</span>
+                    </div>
+                </div>
+            </div>
+            <div class="loader-progress-container">
+                <div class="loader-progress-bar" id="loaderProgress"></div>
+                <div class="loader-percentage" id="loaderPercent">0%</div>
+            </div>
+            <div class="hack-lines">
+                <div class="hack-line"></div>
+                <div class="hack-line"></div>
+                <div class="hack-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="header-container">
+            <nav class="nav">
+                <a href="#home" class="nav-brand">
+                    <div class="brand-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span class="brand-text">CyberSec</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <span class="nav-text">Home</span>
+                    </a>
+                    <a href="#hacks" class="nav-link" data-section="hacks">
+                        <span class="nav-text">Operations</span>
+                    </a>
+                    <a href="#about" class="nav-link" data-section="about">
+                        <span class="nav-text">About</span>
+                    </a>
+                    <a href="#services" class="nav-link" data-section="services">
+                        <span class="nav-text">Services</span>
+                    </a>
+                    <a href="#certifications" class="nav-link" data-section="certifications">
+                        <span class="nav-text">Certifications</span>
+                    </a>
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </div>
+                <div class="nav-actions">
+                    <button class="dir-toggle" id="dirToggle" title="Toggle Direction">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span class="dir-text">RTL</span>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        
+        <section id="home" class="section hero">
+            <div class="hero-bg">
+                <canvas id="matrixCanvas"></canvas>
+                <div class="grid-overlay"></div>
+                <div class="scan-line"></div>
+                <div class="hack-particles" id="hackParticles"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <div class="badge-pulse"></div>
+                        <i class="fas fa-shield-check"></i>
+                        <span>ELITE SECURITY EXPERT</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-word" data-word="PROTECTING">PROTECTING</span>
+                        <span class="title-word highlight" data-word="DIGITAL">DIGITAL</span>
+                        <span class="title-word" data-word="FRONTIERS">FRONTIERS</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="subtitle-text">Penetration Testing</span>
+                        <span class="subtitle-separator">|</span>
+                        <span class="subtitle-text">Vulnerability Assessment</span>
+                        <span class="subtitle-separator">|</span>
+                        <span class="subtitle-text">Security Architecture</span>
+                    </div>
+                    <p class="hero-description">
+                        Elite cybersecurity professional specializing in advanced threat detection, 
+                        penetration testing, and enterprise security solutions.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="500">0</div>
+                                <div class="stat-label">Systems Secured</div>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="10">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="25">0</div>
+                                <div class="stat-label">Certifications</div>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number" data-count="200">0</div>
+                                <div class="stat-label">Clients Protected</div>
+                            </div>
+                            <div class="stat-glow"></div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Secure Your System</span>
+                            <i class="fas fa-lock"></i>
+                            <div class="btn-shine"></div>
+                        </a>
+                        <a href="#services" class="btn btn-secondary">
+                            <span>View Services</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="security-monitor">
+                        <div class="monitor-frame">
+                            <div class="monitor-screen">
+                                <div class="screen-content">
+                                    <div class="screen-header">
+                                        <div class="screen-dots">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="screen-title">SECURITY DASHBOARD</div>
+                                    </div>
+                                    <div class="screen-body">
+                                        <div class="dashboard-item">
+                                            <div class="dashboard-label">Firewall Status</div>
+                                            <div class="dashboard-value active">ACTIVE</div>
+                                            <div class="dashboard-bar">
+                                                <div class="dashboard-progress" style="width: 100%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard-item">
+                                            <div class="dashboard-label">Threat Detection</div>
+                                            <div class="dashboard-value active">MONITORING</div>
+                                            <div class="dashboard-bar">
+                                                <div class="dashboard-progress" style="width: 95%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard-item">
+                                            <div class="dashboard-label">Encryption Level</div>
+                                            <div class="dashboard-value active">AES-256</div>
+                                            <div class="dashboard-bar">
+                                                <div class="dashboard-progress" style="width: 100%"></div>
+                                            </div>
+                                        </div>
+                                        <div class="dashboard-item">
+                                            <div class="dashboard-label">Network Security</div>
+                                            <div class="dashboard-value active">SECURED</div>
+                                            <div class="dashboard-bar">
+                                                <div class="dashboard-progress" style="width: 98%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="monitor-stand"></div>
+                        </div>
+                        <div class="floating-icons">
+                            <div class="float-icon icon-1">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="float-icon icon-2">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="float-icon icon-3">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <div class="float-icon icon-4">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <section id="hacks" class="section hacks-section">
+            <div class="section-bg">
+                <div class="section-pattern"></div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">00</span>
+                    <h2 class="section-title">
+                        <span class="title-text">Security Operations</span>
+                        <span class="title-underline"></span>
+                    </h2>
+                </div>
+                <div class="hacks-slider">
+                    <div class="slider-main-container">
+                        <div class="slider-viewport">
+                            <div class="slider-track" id="sliderTrack">
+                                <div class="slider-slide active">
+                                    <div class="slide-card">
+                                        <div class="slide-bg-gradient slide-bg-1"></div>
+                                        <div class="slide-pattern"></div>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-icon-container">
+                                                <div class="slide-icon-border"></div>
+                                                <i class="fas fa-shield-alt"></i>
+                                                <div class="icon-ripple"></div>
+                                            </div>
+                                            <h3 class="slide-title">Network Penetration</h3>
+                                            <p class="slide-description">Advanced network security assessment and vulnerability identification</p>
+                                            <div class="slide-metrics">
+                                                <div class="metric-item">
+                                                    <span class="metric-value">500+</span>
+                                                    <span class="metric-label">Systems</span>
+                                                </div>
+                                                <div class="metric-item">
+                                                    <span class="metric-value">98%</span>
+                                                    <span class="metric-label">Success</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-slide">
+                                    <div class="slide-card">
+                                        <div class="slide-bg-gradient slide-bg-2"></div>
+                                        <div class="slide-pattern"></div>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-icon-container">
+                                                <div class="slide-icon-border"></div>
+                                                <i class="fas fa-lock"></i>
+                                                <div class="icon-ripple"></div>
+                                            </div>
+                                            <h3 class="slide-title">Encryption Analysis</h3>
+                                            <p class="slide-description">Evaluating encryption protocols and cryptographic implementations</p>
+                                            <div class="slide-metrics">
+                                                <div class="metric-item">
+                                                    <span class="metric-value">AES-256</span>
+                                                    <span class="metric-label">Level</span>
+                                                </div>
+                                                <div class="metric-item">
+                                                    <span class="metric-value">100%</span>
+                                                    <span class="metric-label">Secure</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-slide">
+                                    <div class="slide-card">
+                                        <div class="slide-bg-gradient slide-bg-3"></div>
+                                        <div class="slide-pattern"></div>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-icon-container">
+                                                <div class="slide-icon-border"></div>
+                                                <i class="fas fa-bug"></i>
+                                                <div class="icon-ripple"></div>
+                                            </div>
+                                            <h3 class="slide-title">Vulnerability Scanning</h3>
+                                            <p class="slide-description">Comprehensive security scanning and threat detection systems</p>
+                                            <div class="slide-metrics">
+                                                <div class="metric-item">
+                                                    <span class="metric-value">1000+</span>
+                                                    <span class="metric-label">Scans</span>
+                                                </div>
+                                                <div class="metric-item">
+                                                    <span class="metric-value">95%</span>
+                                                    <span class="metric-label">Accuracy</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-slide">
+                                    <div class="slide-card">
+                                        <div class="slide-bg-gradient slide-bg-4"></div>
+                                        <div class="slide-pattern"></div>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-icon-container">
+                                                <div class="slide-icon-border"></div>
+                                                <i class="fas fa-fire"></i>
+                                                <div class="icon-ripple"></div>
+                                            </div>
+                                            <h3 class="slide-title">Incident Response</h3>
+                                            <p class="slide-description">Rapid response and mitigation of security breaches</p>
+                                            <div class="slide-metrics">
+                                                <div class="metric-item">
+                                                    <span class="metric-value">24/7</span>
+                                                    <span class="metric-label">Support</span>
+                                                </div>
+                                                <div class="metric-item">
+                                                    <span class="metric-value"><5min</span>
+                                                    <span class="metric-label">Response</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-slide">
+                                    <div class="slide-card">
+                                        <div class="slide-bg-gradient slide-bg-5"></div>
+                                        <div class="slide-pattern"></div>
+                                        <div class="slide-content-wrapper">
+                                            <div class="slide-icon-container">
+                                                <div class="slide-icon-border"></div>
+                                                <i class="fas fa-code"></i>
+                                                <div class="icon-ripple"></div>
+                                            </div>
+                                            <h3 class="slide-title">Code Security</h3>
+                                            <p class="slide-description">Application security testing and secure coding practices</p>
+                                            <div class="slide-metrics">
+                                                <div class="metric-item">
+                                                    <span class="metric-value">500+</span>
+                                                    <span class="metric-label">Projects</span>
+                                                </div>
+                                                <div class="metric-item">
+                                                    <span class="metric-value">99%</span>
+                                                    <span class="metric-label">Secure</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-nav-btn prev-btn" id="prevBtn">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="slider-indicators" id="sliderIndicators"></div>
+                            <button class="slider-nav-btn next-btn" id="nextBtn">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="slider-footer">
+                            <div class="slider-counter">
+                                <span class="current-slide" id="currentSlide">01</span>
+                                <span class="slide-separator">/</span>
+                                <span class="total-slides" id="totalSlides">05</span>
+                            </div>
+                            <div class="slider-progress-wrapper">
+                                <div class="slider-progress-bar">
+                                    <div class="slider-progress-fill" id="sliderProgress"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="section-bg">
+                <div class="section-pattern"></div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">
+                        <span class="title-text">About</span>
+                        <span class="title-underline"></span>
+                    </h2>
+                </div>
+                <div class="about-wrapper">
+                    <div class="about-intro-section">
+                        <div class="about-badge">
+                            <i class="fas fa-shield-check"></i>
+                            <span>Expert Professional</span>
+                        </div>
+                        <p class="about-text">
+                            With over a decade of experience in cybersecurity, I specialize in protecting 
+                            organizations from sophisticated cyber threats. My expertise spans penetration 
+                            testing, vulnerability assessment, incident response, and security architecture 
+                            design for enterprise-level systems.
+                        </p>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-content">
+                            <div class="about-features">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-user-shield"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title">Ethical Hacking</h3>
+                                    <p class="feature-desc">Certified ethical hacker with expertise in penetration testing and vulnerability assessment.</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title">Network Security</h3>
+                                    <p class="feature-desc">Advanced network security configuration and firewall management.</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title">Security Architecture</h3>
+                                    <p class="feature-desc">Designing and implementing robust security architectures for enterprise systems.</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title">Incident Response</h3>
+                                    <p class="feature-desc">24/7 monitoring and rapid response to security incidents and breaches.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-visual">
+                        <div class="security-terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="terminal-title">SECURITY AUDIT</div>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line">
+                                    <span class="prompt">$</span>
+                                    <span class="command">nmap -sS target.com</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output">Starting Nmap 7.92...</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output">PORT    STATE  SERVICE</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output">22/tcp  open   ssh</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output">80/tcp  open   http</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output">443/tcp open   https</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="output success">[✓] Security scan completed</span>
+                                </div>
+                                <div class="terminal-line">
+                                    <span class="prompt">$</span>
+                                    <span class="cursor">_</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section services-section">
+            <div class="section-bg">
+                <div class="section-pattern"></div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">
+                        <span class="title-text">Services</span>
+                        <span class="title-underline"></span>
+                    </h2>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-bug"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="service-number">01</div>
+                        </div>
+                        <h3 class="service-title">Penetration Testing</h3>
+                        <p class="service-description">
+                            Identify vulnerabilities before attackers exploit them through comprehensive security testing.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Web Application Testing</li>
+                            <li><i class="fas fa-check"></i> Network Penetration</li>
+                            <li><i class="fas fa-check"></i> Social Engineering</li>
+                            <li><i class="fas fa-check"></i> Physical Security</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#contact" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-shield-virus"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="service-number">02</div>
+                        </div>
+                        <h3 class="service-title">Vulnerability Assessment</h3>
+                        <p class="service-description">
+                            Systematic evaluation of security weaknesses with comprehensive risk analysis.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Automated Scanning</li>
+                            <li><i class="fas fa-check"></i> Manual Testing</li>
+                            <li><i class="fas fa-check"></i> Risk Analysis</li>
+                            <li><i class="fas fa-check"></i> Remediation Plans</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#contact" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-user-shield"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div class="service-number">03</div>
+                        </div>
+                        <h3 class="service-title">Security Consulting</h3>
+                        <p class="service-description">
+                            Strategic security guidance to build robust defense mechanisms and custom architecture.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Security Architecture</li>
+                            <li><i class="fas fa-check"></i> Policy Development</li>
+                            <li><i class="fas fa-check"></i> Compliance Audits</li>
+                            <li><i class="fas fa-check"></i> Training Programs</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="#contact" class="service-link">
+                                <span>Learn More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section certs-section">
+            <div class="section-bg">
+                <div class="section-pattern"></div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">
+                        <span class="title-text">Certifications</span>
+                        <span class="title-underline"></span>
+                    </h2>
+                </div>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <div class="badge-pulse"></div>
+                        </div>
+                        <h3 class="cert-title">CEH</h3>
+                        <p class="cert-name">Certified Ethical Hacker</p>
+                        <p class="cert-org">EC-Council</p>
+                        <div class="cert-year">2023</div>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <div class="badge-pulse"></div>
+                        </div>
+                        <h3 class="cert-title">CISSP</h3>
+                        <p class="cert-name">Certified Information Systems Security Professional</p>
+                        <p class="cert-org">(ISC)²</p>
+                        <div class="cert-year">2022</div>
+                        <div class="cert-glow"></div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-badge">
+                            <i class="fas fa-certificate"></i>
+                            <div class="badge-pulse"></div>
+                        </div>
+                        <h3 class="cert-title">OSCP</h3>
+                        <p class="cert-name">Offensive Security Certified Professional</p>
+                        <p class="cert-org">Offensive Security</p>
+                        <div class="cert-year">2021</div>
+                        <div class="cert-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-bg">
+                <div class="section-pattern"></div>
+            </div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">
+                        <span class="title-text">Contact</span>
+                        <span class="title-underline"></span>
+                    </h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:security@example.com">security@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="icon-pulse"></div>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <span>Global - Remote Available</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-input form-textarea" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Secure Message</span>
+                            <i class="fas fa-lock"></i>
+                            <div class="btn-shine"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    © 2025 Cybersecurity Expert. All systems secured.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
