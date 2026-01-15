@@ -139,9 +139,9 @@ I developed a Python script for proactive threat hunting of similar threats in t
 [View script code](scripts/threat_hunting_logic.py)
 
  ---
-**Detection and localization of the Living off the Land (LotL) attack.**
+🛡️ **Detection and localization of the Living off the Land (LotL) attack.**
 
-**Role: SOC Analyst (L2) / Security Engineer.**
+🧩 **Role: SOC Analyst (L2) / Security Engineer.**
 
 **1. Situation**
 Suspicious activity was detected on one of the administrator's workstations within the corporate network. Traditional antivirus protection failed because the attacker used legitimate system tools (PowerShell and WMI) to move undetected across the network.
