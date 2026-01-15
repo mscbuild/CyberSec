@@ -1,6 +1,30 @@
 # 🔐 Detection Engineering Case Study
 ## Phishing → PowerShell (Living off the Land) → EDR Block
 
+**Role:** SOC Analyst / Detection Engineer
+**Focus:** Living off the Land, Fileless Execution, Memory Detection
+**Tools:** PowerShell, EDR, YARA, MITRE ATT&CK
+**Outcome:** Attack detected and blocked before data access
+
+----
+
+**1. Situation**
+Suspicious activity was detected on one of the administrator's workstations within the corporate network. Traditional antivirus protection failed because the attacker used legitimate system tools (PowerShell and WMI) to move undetected across the network.
+
+**2. Task**
+It was necessary to confirm the compromise, determine the scope of the breach, isolate the infected host, and prevent data leakage from the customer database.
+
+**3. Action**
+Log Analysis: Correlated events in the Splunk/ELK Stack using custom PowerShell anomalous behavior detection rules.
+AI Forensics: Used the built-in AI assistant in Microsoft Sentinel to automatically build an attack graph and identify connections between remote processes.
+Response: Using CrowdStrike Falcon (EDR), isolated a host from the network in one click while maintaining the ability to remotely collect artifacts.
+Code Analysis: Deobfuscated a malicious PowerShell script that attempted to dump credentials from RAM (LSASS).
+
+**4. Result**
+Speed: Time to detection (MTTD) reduced to 12 minutes, time to containment (MTTR) reduced to 25 minutes.
+Impact: Prevented an attempt to steal 50,000 customer records.
+Improvement: Developed and implemented a new detection rule in SIEM that now blocks such command chains at the execution stage.
+
 - ## Visualized Attack Vector: 
 
 <img width="1536" height="1024" alt="ChatGPT Image 15 янв  2026 г , 19_44_10" src="https://github.com/user-attachments/assets/1f91e07a-db87-498f-8908-fcf9ced3de8e" />
@@ -138,28 +162,7 @@ I developed a Python script for proactive threat hunting of similar threats in t
 
 [View script code](scripts/threat_hunting_logic.py)
 
- ---
-🛡️ **Detection and localization of the Living off the Land (LotL) attack.**
-
-🧩 **Role: SOC Analyst (L2) / Security Engineer.**
-
-**1. Situation**
-Suspicious activity was detected on one of the administrator's workstations within the corporate network. Traditional antivirus protection failed because the attacker used legitimate system tools (PowerShell and WMI) to move undetected across the network.
-
-**2. Task**
-It was necessary to confirm the compromise, determine the scope of the breach, isolate the infected host, and prevent data leakage from the customer database.
-
-**3. Action**
-Log Analysis: Correlated events in the Splunk/ELK Stack using custom PowerShell anomalous behavior detection rules.
-AI Forensics: Used the built-in AI assistant in Microsoft Sentinel to automatically build an attack graph and identify connections between remote processes.
-Response: Using CrowdStrike Falcon (EDR), isolated a host from the network in one click while maintaining the ability to remotely collect artifacts.
-Code Analysis: Deobfuscated a malicious PowerShell script that attempted to dump credentials from RAM (LSASS).
-
-**4. Result**
-Speed: Time to detection (MTTD) reduced to 12 minutes, time to containment (MTTR) reduced to 25 minutes.
-Impact: Prevented an attempt to steal 50,000 customer records.
-Improvement: Developed and implemented a new detection rule in SIEM that now blocks such command chains at the execution stage.
-
+ 
 ---
 
 ## 👤 Author
