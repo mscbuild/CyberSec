@@ -1,7 +1,7 @@
 rule LOTL_PowerShell_InMemory_Attack
 {
     meta:
-        author = "SOC Detection Engineering"
+        author = "JR.dev |SOC Detection Engineering"
         description = "Detects Living off the Land PowerShell-based malware in memory"
         category = "LOTL / Fileless Attack"
         technique = "MITRE ATT&CK T1059.001, T1027, T1086"
