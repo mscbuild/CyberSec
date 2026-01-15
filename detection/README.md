@@ -132,6 +132,11 @@ This project demonstrates:
 
 ---
 
+**Automation:**
+
+I developed a Python script for proactive threat hunting of similar threats in the future.
+
+[View script code](scripts/threat_hunting_logic.py)
  
 
 ---
