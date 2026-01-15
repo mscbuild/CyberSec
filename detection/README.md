@@ -103,7 +103,7 @@ EDR detected a correlation of:
 
 The repository includes a **YARA rule** designed to detect LOTL PowerShell attacks executed in memory.
 
-📄 File: `detections/yara/lotl_powershell_inmemory.yar`
+📄 File: `detection/yara/lotl_powershell_inmemory.yar`
 
 Detection logic combines:
 - Obfuscation indicators
@@ -123,25 +123,12 @@ This project demonstrates:
 
 ---
 
-## 📂 Repository Structure
-
-```
-.
-├── README.md
-├── attack-flow.png
-├── detections/
-│   └── yara/
-│       └── lotl_powershell_inmemory.yar
-└── screenshots/
-    ├── powershell_execution.png
-    ├── lateral_movement.png
-    └── edr_block.png
-```
+ 
 
 ---
 
 ## 👤 Author
-**Jurij**  
+**JR.dev**  
 SOC Analyst / Detection Engineering Portfolio
 
 ---
