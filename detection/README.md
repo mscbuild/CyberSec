@@ -1,13 +1,13 @@
 # 🔐 Detection Engineering Case Study
 ## Phishing → PowerShell (Living off the Land) → EDR Block
 
-## - Visualized Attack Vector: 
+- ## Visualized Attack Vector: 
 
 <img width="1536" height="1024" alt="ChatGPT Image 15 янв  2026 г , 19_44_10" src="https://github.com/user-attachments/assets/1f91e07a-db87-498f-8908-fcf9ced3de8e" />
 
 *The diagram is constructed to demonstrate the Lateral Movement stage.*
 
-## - SIEM Monitoring: 
+- ## SIEM Monitoring: 
 
 <img width="1536" height="1024" alt="ChatGPT Image 15 янв  2026 г , 19_40_22" src="https://github.com/user-attachments/assets/6c7a97c7-0add-43b1-b266-0052325ea1ea" />
 
