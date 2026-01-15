@@ -1,7 +1,8 @@
 # 🔐 Detection Engineering Case Study
 ## Phishing → PowerShell (Living off the Land) → EDR Block
 
-![Attack Flow](attack-flow.png)
+<img width="1536" height="1024" alt="ChatGPT Image 15 янв  2026 г , 19_44_10" src="https://github.com/user-attachments/assets/1f91e07a-db87-498f-8908-fcf9ced3de8e" />
+
 
 ---
 
