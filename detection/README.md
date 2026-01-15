@@ -55,7 +55,7 @@ Admin-SRV  ⚡ Detection Point
 Customer-DB
 ```
 
-See: `attack-flow.png`
+See: `Visualized Attack`
 
 ---
 
