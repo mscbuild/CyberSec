@@ -27,4 +27,5 @@ The threats countered by cyber-security are three-fold:
 - **Cybercrime** includes single actors or groups targeting systems for financial gain or to cause disruption.
 - **Cyber-attack** often involves politically motivated information gathering.
 - **Cyberterrorism** is intended to undermine electronic systems to cause panic or fear.
- 
+
+ **Protect your IT infrastructure and data from internal and external threats with our IT security solutions.**
