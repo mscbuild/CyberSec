@@ -2,8 +2,11 @@
 ## Phishing → PowerShell (Living off the Land) → EDR Block
 
 **Role:** SOC Analyst / Detection Engineer
+
 **Focus:** Living off the Land, Fileless Execution, Memory Detection
+
 **Tools:** PowerShell, EDR, YARA, MITRE ATT&CK
+
 **Outcome:** Attack detected and blocked before data access
 
 ----
